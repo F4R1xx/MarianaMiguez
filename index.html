@@ -1,84 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="javascript.js" defer></script>
     <title>Mariana Miguez - Nutricionista Premium</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Mariana Miguez</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="container">
+            <h1>Mariana Miguez</h1>
+            <p>Nutricionista Premium | Transformando vidas através da alimentação</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero" id="hero">
-        <h2>Transforme sua alimentação, transforme sua vida</h2>
-        <a href="#contato" class="cta-btn">Agende sua consulta</a>
-    </section>
-
-    <section id="sobre" class="about">
-        <h2>Sobre Mariana Miguez</h2>
-        <p>Mariana Miguez é uma nutricionista especializada em atender clientes que buscam qualidade de vida, saúde e bem-estar. Com anos de experiência, ela oferece um atendimento personalizado, com foco na excelência e resultados duradouros.</p>
-    </section>
-
-    <section id="servicos" class="services">
-        <div class="service">
-            <h3>Consultoria Nutricional</h3>
-            <p>Plano alimentar personalizado e acompanhamento contínuo.</p>
-        </div>
-        <div class="service">
-            <h3>Emagrecimento Saudável</h3>
-            <p>Estratégias eficazes para emagrecer com saúde e sustentabilidade.</p>
-        </div>
-        <div class="service">
-            <h3>Nutrição Esportiva</h3>
-            <p>Alimentação para melhorar seu desempenho esportivo.</p>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Bem-vindo à sua nova jornada de saúde</h2>
+                <p>Mariana Miguez oferece consultoria nutricional personalizada para alcançar seus objetivos de forma saudável e sustentável.</p>
+                <a href="#contato" class="btn">Agende sua consulta</a>
+            </div>
         </div>
     </section>
 
-    <section id="testemunhos" class="testimonials">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <img src="images/cliente1.jpg" alt="Joana Silva" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p>"Mariana transformou minha alimentação e me fez alcançar meus objetivos com saúde e equilíbrio!"</p>
-                    <strong>Joana Silva</strong>
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mariana</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Mariana Miguez é uma nutricionista premiada com mais de 10 anos de experiência. Especializada em nutrição clínica e esportiva, ela ajuda seus clientes a alcançarem uma vida mais saudável e equilibrada.</p>
+                    <p>Formada pela Universidade de São Paulo (USP), Mariana já atendeu atletas de alto desempenho e celebridades, sempre com foco em resultados e bem-estar.</p>
+                </div>
+                <div class="sobre-image">
+                    <img src="imagens/mari.png" alt="Sobre Mariana">
                 </div>
             </div>
-            <div class="testimonial-card">
-                <img src="images/cliente2.jpg" alt="Roberto Almeida" class="testimonial-img">
-                <div class="testimonial-text">
-                    <p>"Com o plano da Mariana, emagreci de forma saudável e sem passar fome!"</p>
-                    <strong>Roberto Almeida</strong>
-                </div>
-            </div>
-            <!-- Adicione mais cards conforme necessário -->
         </div>
     </section>
 
-    <section id="contato" class="contact-form">
-        <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <input type="tel" placeholder="Telefone" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar Mensagem</button>
-        </form>
+    <section id="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Consultoria Personalizada</h3>
+                    <p>Planos alimentares sob medida para suas necessidades e objetivos.</p>
+                </div>
+                <div class="servico">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Nutrição Esportiva</h3>
+                    <p>Maximize seu desempenho com alimentação estratégica.</p>
+                </div>
+                <div class="servico">
+                    <i class="fas fa-heart"></i>
+                    <h3>Saúde e Bem-Estar</h3>
+                    <p>Programas para melhorar sua qualidade de vida e saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento">
+                    <img src="imagens/cliente1.jpg" alt="Cliente 1">
+                    <p>"Mariana mudou minha vida! Perdi 10kg e me sinto incrível!"</p>
+                    <span>- Talita Clerc</span>
+                </div>
+                <div class="depoimento">
+                    <img src="imagens/cliente2.jpg" alt="Cliente 2">
+                    <p>"A consultoria dela é simplesmente incrível. Recomendo!"</p>
+                    <span>- João Souza</span>
+                </div>
+                <div class="depoimento">
+                    <img src="imagens/cliente1.jpg" alt="Cliente 3">
+                    <p>"Melhor nutricionista que já conheci. Profissionalismo total!"</p>
+                    <span>- Carla Lima</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mariana Miguez | Nutricionista Premium</p>
-        <p>Redes sociais: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <div class="container">
+            <p>&copy; 2023 Mariana Miguez. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <script src="javascript.js"></script>
 </body>
 </html>

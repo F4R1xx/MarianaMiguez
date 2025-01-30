@@ -1,321 +1,290 @@
-/* Estilos Gerais */
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #0059b3;
+    background: #333;
     color: #fff;
-    padding: 40px 20px;
+    padding: 20px 0;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
+
 header h1 {
     font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-nav a {
-    color: white;
-    margin: 0 20px;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: 0.3s ease;
-}
-nav a:hover {
-    color: #ffbf00;
+    margin-bottom: 10px;
 }
 
-/* Seção Hero */
-.hero {
-    background-image: url('images/hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    flex-direction: column;
-}
-
-/* Botões */
-.cta-btn {
-    background-color: #ffbf00;
-    padding: 15px 30px;
+header p {
     font-size: 1.2rem;
-    color: #0059b3;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.3s ease;
-}
-.cta-btn:hover {
-    background-color: #fff;
-    color: #0059b3;
-    transform: scale(1.1);
-}
-
-/* Seções sobre */
-.about {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-/* Serviços */
-.services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 60px 20px;
-    background-color: #fff;
-}
-.service {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-.service:hover {
-    transform: translateY(-10px);
-}
-.service h3 {
-    color: #0059b3;
-}
-
-/* Depoimentos */
-.testimonials {
-    background-color: #f4f4f4;
-    padding: 80px 20px;
-    text-align: center;
-}
-.testimonials h2 {
-    font-size: 2.5rem;
-    color: #0059b3;
     margin-bottom: 20px;
 }
 
-.testimonial-cards {
+header nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
 }
 
-.testimonial-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+#hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
+    justify-content: space-between;
+    padding: 100px 0;
+    background: #f4f4f4;
 }
 
-.testimonial-card:hover {
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-text .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+    background: #555;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Sobre Section */
+#sobre {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-text {
+    max-width: 50%;
+}
+
+.sobre-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.sobre-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Serviços Section */
+#servicos {
+    padding: 100px 0;
+    background: #f4f4f4;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.servico {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servico:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-.testimonial-img {
+.servico i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.servico h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 1rem;
+}
+
+/* Depoimentos Section */
+#depoimentos {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.depoimento {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.depoimento img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.testimonial-text p {
-    font-style: italic;
-    color: #777;
     margin-bottom: 10px;
-    font-size: 1.1rem;
 }
 
-.testimonial-text strong {
-    color: #0059b3;
-    display: block;
-    margin-top: 10px;
-    font-size: 1.2rem;
+.depoimento p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Formulário de Contato */
-.contact-form {
-    background-color: #0059b3;
-    padding: 60px 20px;
-    color: white;
+.depoimento span {
+    font-size: 0.9rem;
+    color: #777;
 }
-.contact-form h2 {
-    font-size: 2.5rem;
+
+/* Contato Section */
+#contato {
+    padding: 100px 0;
+    background: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
     margin-bottom: 20px;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: none;
-}
-.contact-form button {
-    background-color: #ffbf00;
-    color: #0059b3;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-.contact-form button:hover {
-    background-color: #fff;
-    color: #0059b3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Rodapé */
-footer {
-    background-color: #0059b3;
-    padding: 40px 20px;
-    color: white;
-    text-align: center;
+form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-footer a {
-    color: white;
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
     margin: 0 10px;
     font-size: 1.2rem;
-}
-footer a:hover {
-    color: #ffbf00;
+    transition: color 0.3s;
 }
 
-/* Animação de Fade-in */
-.fade-in {
-    animation: fadeIn 1.5s ease-out forwards;
+footer .social-icons a:hover {
+    color: #ddd;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsividade - Media Queries */
-
-/* Para telas pequenas (celulares) */
+/* Responsividade */
 @media (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1rem;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .cta-btn {
-        font-size: 1rem;
-        padding: 12px 25px;
-    }
-
-    .about, .services, .contact-form {
-        padding: 40px 20px;
-    }
-
-    .testimonial-cards {
+    #hero {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        text-align: center;
     }
 
-    .testimonial-card {
-        width: 90%;
-        margin: 10px 0;
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 
-    .service {
-        padding: 20px;
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .service h3 {
-        font-size: 1.5rem;
-    }
-
-    .contact-form input, .contact-form textarea {
-        padding: 12px;
-    }
-
-    .contact-form button {
-        font-size: 1rem;
-    }
-
-    footer {
-        padding: 20px 10px;
-    }
-}
-
-/* Para telas menores que 480px (tela de celular muito pequena) */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .cta-btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .testimonial-card {
-        width: 100%;
-    }
-
-    .testimonial-img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .testimonial-text p {
-        font-size: 1rem;
-    }
-
-    .testimonial-text strong {
-        font-size: 1rem;
-    }
-
-    footer a {
-        font-size: 1rem;
+    .sobre-text {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
