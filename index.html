@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <h1>Mariana Miguez</h1>
-            <p>Nutricionista Premium | Transformando vidas através da alimentação</p>
+            <p class="subtitulo">Nutricionista Premium | Transformando vidas através da alimentação</p>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
@@ -25,12 +25,23 @@
         </div>
     </header>
 
+    <section id="transforme-sua-vida">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="transforme-content">
+                <h2>Transforme Sua Vida Hoje</h2>
+                <p>Mariana Miguez está pronta para ajudar você a alcançar seus objetivos de saúde e bem-estar. Com um plano personalizado, você pode transformar sua vida de forma saudável e sustentável.</p>
+                <a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta" class="btn">Agende Sua Consulta via Whatsapp</a>
+            </div>
+        </div>
+    </section>
+
     <section id="hero">
         <div class="container">
             <div class="hero-text">
                 <h2>Bem-vindo à sua nova jornada de saúde</h2>
                 <p>Mariana Miguez oferece consultoria nutricional personalizada para alcançar seus objetivos de forma saudável e sustentável.</p>
-                <a href="#contato" class="btn">Agende sua consulta</a>
+                <a href="#contato" class="btn">Agende sua consulta via Email</a>
             </div>
         </div>
     </section>
@@ -85,12 +96,12 @@
                 <div class="depoimento">
                     <img src="imagens/cliente2.jpg" alt="Cliente 2">
                     <p>"A consultoria dela é simplesmente incrível. Recomendo!"</p>
-                    <span>- João Souza</span>
+                    <span>- Gabriel Geraldo</span>
                 </div>
                 <div class="depoimento">
-                    <img src="imagens/cliente1.jpg" alt="Cliente 3">
+                    <img src="imagens/cliente3.jpg" alt="Cliente 3">
                     <p>"Melhor nutricionista que já conheci. Profissionalismo total!"</p>
-                    <span>- Carla Lima</span>
+                    <span>- William Fagundes</span>
                 </div>
             </div>
         </div>
@@ -99,11 +110,15 @@
     <section id="contato">
         <div class="container">
             <h2>Contato</h2>
-            <form action="#" method="post">
+            <form action="https://formsubmit.co/william.fagundes.dev@gmail.com" method="POST">
                 <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <!-- Campos ocultos -->
+            <input type="hidden" name="_subject" value="Novo contato do site!">
+            <input type="hidden" name="_next" value="https://mariana-miguez.vercel.app/">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
     </section>
@@ -112,9 +127,9 @@
         <div class="container">
             <p>&copy; 2023 Mariana Miguez. Todos os direitos reservados.</p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5521992678505"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>

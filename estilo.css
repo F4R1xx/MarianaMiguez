@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lavishly+Yours&display=swap');
+
+/* Definindo variáveis de cores */
+:root {
+    --cor-primaria: #003366;       /* Azul marinho (cor principal) */
+    --cor-secundaria: #336699;     /* Azul médio (hover, detalhes) */
+    --cor-fundo-claro: #e6f0ff;    /* Fundo claro para seções (azul bem claro) */
+    --cor-fundo-branco: white;      /* Fundo branco */
+    --cor-texto: #003366;          /* Texto principal em azul marinho */
+    --cor-texto-claro: #6699cc;    /* Texto secundário (azul claro) */
+    --cor-botao: #003366;          /* Cor de fundo do botão em azul marinho */
+    --cor-botao-hover: #336699;    /* Cor de fundo do botão ao passar o mouse (azul médio) */
+    --cor-borda: #b3c6e6;          /* Cor das bordas (azul claro) */
+    --cor-link: white;           /* Cor dos links no header/footer (azul marinho) */
+    --cor-link-hover: #336699;     /* Cor dos links ao passar o mouse (azul médio) */
+}
+
+
 /* Reset básico */
 * {
     margin: 0;
@@ -6,13 +24,18 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--cor-texto);
+}
+
+h1{
+    font-family: "Alex Brush", serif;
+    font-weight: bold;
+    font-size: 64px !important;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
@@ -24,8 +47,8 @@ h1, h2, h3 {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: var(--cor-primaria);
+    color: var(--cor-link);
     padding: 20px 0;
     text-align: center;
 }
@@ -51,9 +74,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: var(--cor-link);
     text-decoration: none;
     font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: var(--cor-link-hover);
 }
 
 /* Hero Section */
@@ -62,7 +89,7 @@ header nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding: 100px 0;
-    background: #f4f4f4;
+    background: var(--cor-fundo-claro);
 }
 
 .hero-text {
@@ -80,8 +107,8 @@ header nav ul li a {
 }
 
 .hero-text .btn {
-    background: #333;
-    color: #fff;
+    background: var(--cor-botao);
+    color: var(--cor-link);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -89,7 +116,7 @@ header nav ul li a {
 }
 
 .hero-text .btn:hover {
-    background: #555;
+    background: var(--cor-botao-hover);
 }
 
 .hero-image img {
@@ -109,8 +136,8 @@ header nav ul li a {
 
 /* Sobre Section */
 #sobre {
-    padding: 100px 0;
-    background: #fff;
+    padding-top: 100px;
+    background: var(--cor-fundo-branco);
 }
 
 .sobre-content {
@@ -136,7 +163,7 @@ header nav ul li a {
 /* Serviços Section */
 #servicos {
     padding: 100px 0;
-    background: #f4f4f4;
+    background: var(--cor-fundo-claro);
 }
 
 .servicos-grid {
@@ -148,7 +175,7 @@ header nav ul li a {
 .servico {
     text-align: center;
     padding: 20px;
-    background: #fff;
+    background: var(--cor-fundo-branco);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -161,7 +188,7 @@ header nav ul li a {
 .servico i {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--cor-primaria);
 }
 
 .servico h3 {
@@ -176,7 +203,7 @@ header nav ul li a {
 /* Depoimentos Section */
 #depoimentos {
     padding: 100px 0;
-    background: #fff;
+    background: var(--cor-fundo-branco);
 }
 
 .depoimentos-grid {
@@ -188,7 +215,7 @@ header nav ul li a {
 .depoimento {
     text-align: center;
     padding: 20px;
-    background: #f4f4f4;
+    background: var(--cor-fundo-claro);
     border-radius: 10px;
 }
 
@@ -206,13 +233,13 @@ header nav ul li a {
 
 .depoimento span {
     font-size: 0.9rem;
-    color: #777;
+    color: var(--cor-texto-claro);
 }
 
 /* Contato Section */
 #contato {
     padding: 100px 0;
-    background: #f4f4f4;
+    background: var(--cor-fundo-claro);
 }
 
 form {
@@ -225,13 +252,13 @@ form {
 form input, form textarea {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-borda);
     border-radius: 5px;
 }
 
 form button {
-    background: #333;
-    color: #fff;
+    background: var(--cor-botao);
+    color: var(--cor-link);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -240,13 +267,13 @@ form button {
 }
 
 form button:hover {
-    background: #555;
+    background: var(--cor-botao-hover);
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--cor-primaria);
+    color: var(--cor-link);
     text-align: center;
     padding: 20px 0;
 }
@@ -256,14 +283,14 @@ footer .social-icons {
 }
 
 footer .social-icons a {
-    color: #fff;
+    color: var(--cor-link);
     margin: 0 10px;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 footer .social-icons a:hover {
-    color: #ddd;
+    color: var(--cor-link-hover);
 }
 
 /* Responsividade */
@@ -287,4 +314,103 @@ footer .social-icons a:hover {
         max-width: 100%;
         margin-bottom: 30px;
     }
+
+    #transforme-sua-vida {
+        background-size: cover;
+        background-position: -100px !important;
+        background-attachment: fixed; /* Efeito parallax */
+    }
+}
+
+/* Seção Transforme Sua Vida */
+#transforme-sua-vida {
+    position: relative;
+    padding: 150px 0;
+    background-image: url('/imagens/banner.jpg'); /* Imagem de fundo da Mariana */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito parallax */
+    color: var(--cor-link);
+    text-align: center;
+    overflow: hidden;
+}
+
+#transforme-sua-vida .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Overlay escuro para melhorar a legibilidade */
+    z-index: 1;
+}
+
+#transforme-sua-vida .container {
+    position: relative;
+    z-index: 2;
+}
+
+#transforme-sua-vida h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#transforme-sua-vida p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+#transforme-sua-vida .btn {
+    background: var(--cor-botao);
+    color: var(--cor-link);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#transforme-sua-vida .btn:hover {
+    background: var(--cor-botao-hover);
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: -30px;
 }
