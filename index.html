@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariana Miguez - Nutricionista Premium</title>
+    <title>Mariana Miguez - Nutricionista</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="imagens/mari_logo.jpg">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Mariana Miguez</h1>
-            <p class="subtitulo">Nutricionista Premium | Transformando vidas através da alimentação</p>
+            <p class="subtitulo">Nutricionista | Transformando vidas através da alimentação</p>
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#hero">Agende Sua Consulta</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,8 +34,7 @@
         <div class="container">
             <div class="transforme-content">
                 <h2>Transforme Sua Vida Hoje</h2>
-                <p>Mariana Miguez está pronta para ajudar você a alcançar seus objetivos de saúde e bem-estar. Com um plano personalizado, você pode transformar sua vida de forma saudável e sustentável.</p>
-                <a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta" class="btn">Agende Sua Consulta via Whatsapp</a>
+                <p>Mariana Miguez está pronta para acompanhar você em sua jornada rumo a uma vida mais saudável e equilibrada. Com um plano personalizado e adaptado às suas necessidades e metas, você terá o suporte necessário para transformar sua rotina de maneira sustentável, alcançando resultados duradouros e promovendo seu bem-estar físico e mental.</p>
             </div>
         </div>
     </section>
@@ -40,8 +43,9 @@
         <div class="container">
             <div class="hero-text">
                 <h2>Bem-vindo à sua nova jornada de saúde</h2>
-                <p>Mariana Miguez oferece consultoria nutricional personalizada para alcançar seus objetivos de forma saudável e sustentável.</p>
-                <a href="#contato" class="btn">Agende sua consulta via Email</a>
+                <p>Mariana Miguez oferece consultoria nutricional personalizada, desenvolvendo planos individuais para ajudar você a alcançar seus objetivos de saúde e bem-estar de maneira saudável, equilibrada e sustentável. Com acompanhamento contínuo, você será guiado em cada etapa do processo, garantindo resultados duradouros e um estilo de vida mais saudável.</p>
+                <a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta" class="btn">Agende sua
+                    consulta via Whatsapp</a>
             </div>
         </div>
     </section>
@@ -51,8 +55,14 @@
             <h2>Sobre Mariana</h2>
             <div class="sobre-content">
                 <div class="sobre-text">
-                    <p>Mariana Miguez é uma nutricionista premiada com mais de 10 anos de experiência. Especializada em nutrição clínica e esportiva, ela ajuda seus clientes a alcançarem uma vida mais saudável e equilibrada.</p>
-                    <p>Formada pela Universidade de São Paulo (USP), Mariana já atendeu atletas de alto desempenho e celebridades, sempre com foco em resultados e bem-estar.</p>
+                    <p>Mariana Miguez é uma nutricionista recém-formada com excelência pelo IBMR e está se
+                        especializando ainda mais com uma pós-graduação em Nutrição Clínica pela renomada Faculdade VP.
+                        Durante sua formação, teve a oportunidade de fazer intercâmbio, ampliando seus conhecimentos e
+                        explorando diferentes abordagens nutricionais ao redor do mundo.</p>
+                    <p>Com uma visão moderna e baseada em ciência, Mariana une teoria e prática para oferecer um
+                        atendimento individualizado, focado no bem-estar e nos objetivos de cada paciente. Determinada,
+                        dedicada e em constante atualização, ela é a escolha perfeita para quem busca uma profissional
+                        comprometida com saúde, equilíbrio e resultados reais.</p>
                 </div>
                 <div class="sobre-image">
                     <img src="imagens/mari.png" alt="Sobre Mariana">
@@ -69,11 +79,6 @@
                     <i class="fas fa-utensils"></i>
                     <h3>Consultoria Personalizada</h3>
                     <p>Planos alimentares sob medida para suas necessidades e objetivos.</p>
-                </div>
-                <div class="servico">
-                    <i class="fas fa-dumbbell"></i>
-                    <h3>Nutrição Esportiva</h3>
-                    <p>Maximize seu desempenho com alimentação estratégica.</p>
                 </div>
                 <div class="servico">
                     <i class="fas fa-heart"></i>
@@ -107,19 +112,17 @@
         </div>
     </section>
 
-    <section id="contato">
+    <section id="siga-no-instagram">
+        <div class="overlay"></div>
         <div class="container">
-            <h2>Contato</h2>
-            <form action="https://formsubmit.co/william.fagundes.dev@gmail.com" method="POST">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-            <!-- Campos ocultos -->
-            <input type="hidden" name="_subject" value="Novo contato do site!">
-            <input type="hidden" name="_next" value="https://mariana-miguez.vercel.app/">
-            <input type="hidden" name="_captcha" value="false">
-            <button type="submit" class="btn">Enviar</button>
-            </form>
+            <div class="instagram-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                    alt="Logo do Instagram" class="instagram-logo">
+                <h2>Acompanhe Mariana Miguez</h2>
+                <p>Fique por dentro do dia a dia, dicas exclusivas e conteúdos inspiradores sobre saúde e bem-estar.</p>
+                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp" target="_blank" class="btn-instagram">Siga no
+                    Instagram</a>
+            </div>
         </div>
     </section>
 
@@ -127,13 +130,16 @@
         <div class="container">
             <p>&copy; 2023 Mariana Miguez. Todos os direitos reservados.</p>
             <div class="social-icons">
-                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5521992678505"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>
 
+
     <script src="javascript.js"></script>
 </body>
+
 </html>

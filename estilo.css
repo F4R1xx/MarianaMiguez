@@ -32,7 +32,7 @@ body {
 h1{
     font-family: "Alex Brush", serif;
     font-weight: bold;
-    font-size: 64px !important;
+    font-size: 3.2rem !important;
 }
 
 h1, h2, h3 {
@@ -157,7 +157,7 @@ header nav ul li a:hover {
 
 .sobre-image img {
     max-width: 100%;
-    border-radius: 10px;
+    margin-bottom: -8px;
 }
 
 /* Serviços Section */
@@ -412,5 +412,49 @@ footer .social-icons a:hover {
 .subtitulo{
     font-weight: bold;
     font-size: 15px;
-    margin-top: -30px;
+    margin-top: -20px;
+}
+
+#siga-no-instagram {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--cor-fundo-claro);
+}
+
+.instagram-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.instagram-logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+#siga-no-instagram h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+}
+
+#siga-no-instagram p {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+
+.btn-instagram {
+    display: inline-block;
+    background: #e4405f;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-instagram:hover {
+    background: #971e35;
 }
