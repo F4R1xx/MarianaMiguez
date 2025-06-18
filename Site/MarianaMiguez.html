@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariana Miguez - Nutricionista</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-    <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/png" href="images/logo.jpg">
-</head>
+    <link rel="stylesheet" href="estilo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
 <body>
-    <div class="aurora" id="aurora"></div>
+    <div class="aurora"></div>
 
     <header>
         <div class="container">
-            <a href="#" class="logo">
-                <img src="images/logo_header.png" alt="Mariana Miguez Logotipo">
-            </a>
+            <div class="logo-container">
+                <a href="#hero" class="logo">
+                    <img src="images/logo_header.png" alt="Logo Mariana Miguez">
+                </a>
+            </div>
+
             <nav>
                 <ul>
                     <li class="nav-item"><a href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a href="#servicos">Pilares</a></li>
-                    <li class="nav-item"><a href="#abordagem">Abordagem</a></li>
+                    <li class="nav-item"><a href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a href="#como-funciona">Como Funciona</a></li>
                     <li class="nav-item"><a href="#faq">FAQ</a></li>
                     <li class="nav-item"><a href="#depoimentos">Depoimentos</a></li>
-                    <li class="nav-cta"><a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta"
-                            class="btn-agendar">Agendar Consulta</a></li>
+                    <li><a href="#contato" class="btn-agendar">Agendar Consulta</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,127 +38,176 @@
 
     <main>
         <section id="hero">
-            <video autoplay muted loop playsinline class="hero-video">
+            <video autoplay loop muted playsinline class="hero-video">
                 <source src="videos/banner.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos em HTML5.
             </video>
             <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1 data-aos="fade-down" class="golden-text-effect">Nutrição que Redefine</h1>
-                <p data-aos="fade-up" data-aos-delay="200">Transforme sua relação com a comida e alcance o equilíbrio
-                    definitivo.</p>
-                <a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta" target="_blank" class="btn-hero"
-                    data-aos="fade-up" data-aos-delay="400">Inicie sua Jornada</a>
+            <div class="hero-content" data-aos="fade-in">
+                <h1><span class="golden-text-effect">Nutrição</span> que <br>Redefine</h1>
+                <p>Transforme sua relação com a comida e alcance o equilíbrio definitivo.</p>
+                <a href="#contato" class="btn-hero">Inicie sua Jornada</a>
             </div>
         </section>
 
         <section id="sobre">
             <div class="container">
                 <div class="sobre-image" data-aos="fade-right">
-                    <img src="images/foto-mariana.png" alt="Nutricionista Mariana Miguez">
+                    <img src="images/foto-mariana.png" alt="Foto de Mariana Miguez">
                 </div>
-                <div class="sobre-text" data-aos="fade-left" data-aos-delay="200">
-                    <h2 class="section-title">Ciência e <span class="golden-text-effect">Dedicação</span></h2>
-                    <p>Mariana Miguez é uma nutricionista formada com excelência pelo IBMR, com pós-graduação em
-                        Nutrição Clínica pela renomada Faculdade VP. Sua abordagem moderna e baseada em evidências
-                        científicas garante um atendimento individualizado, focado no seu bem-estar e nos seus
-                        objetivos. Determinada e em constante atualização, ela é a escolha perfeita para quem busca
-                        resultados reais e um equilíbrio sustentável.</p>
+                <div class="sobre-text" data-aos="fade-left">
+                    <h2 class="section-title">Ciência e Dedicação para <span class="golden-text-effect">Transformar sua Vida</span></h2>
+                    <p>Olá! Sou Mariana Miguez, nutricionista apaixonada por desmistificar a alimentação e mostrar que comer bem é um ato de autocuidado e prazer. Minha abordagem vai além de dietas, focando na reeducação alimentar para que você conquiste autonomia, saúde e bem-estar de forma duradoura.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="para-quem">
+            <div class="container">
+                <h2 class="section-title">Para quem é a <span class="golden-text-effect">minha consulta?</span></h2>
+                <div class="publico-grid">
+                    <div class="publico-item" data-aos="fade-up">
+                        <i class="fas fa-weight"></i>
+                        <h3>Emagrecimento Definitivo</h3>
+                        <p>Para você que já tentou diversas dietas sem sucesso e busca uma solução sustentável para perder peso sem passar fome.</p>
+                    </div>
+                    <div class="publico-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Melhora da Saúde</h3>
+                        <p>Para quem precisa controlar colesterol, diabetes, hipertensão ou outras condições através de uma alimentação inteligente e saudável.</p>
+                    </div>
+                    <div class="publico-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-running"></i>
+                        <h3>Performance Esportiva</h3>
+                        <p>Para atletas e praticantes de atividade física que querem otimizar seus resultados, ganhando massa ou melhorando o desempenho.</p>
+                    </div>
+                     <div class="publico-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Reeducação Alimentar</h3>
+                        <p>Para quem busca fazer as pazes com a comida, aprendendo a comer de forma intuitiva, sem culpa e com mais energia e disposição.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="servicos">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Nossos <span class="golden-text-effect">Pilares</span></h2>
+                <h2 class="section-title">Nossos <span class="golden-text-effect">Pilares</span></h2>
                 <div class="servicos-grid">
-                    <div class="servico" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="images/NossosPilares1.jpg" alt="Nutricionista em consulta personalizada com paciente"
-                            class="servico-imagem">
+                    <div class="servico" data-aos="fade-up">
+                        <img src="images/NossosPilares1.jpg" alt="Plano Alimentar Individualizado" class="servico-imagem">
                         <div class="servico-content">
-                            <h3>Consultoria Personalizada</h3>
-                            <p>Planos alimentares criados exclusivamente para suas necessidades, rotina e objetivos
-                                únicos.</p>
+                            <h3>Plano Alimentar Individualizado</h3>
+                            <p>Planos feitos sob medida para sua rotina, preferências e objetivos.</p>
                         </div>
                     </div>
-                    <div class="servico" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="images/NossosPilares2.jpg" class="servico-imagem">
+                    <div class="servico" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/NossosPilares2.jpg" alt="Acompanhamento Contínuo" class="servico-imagem">
                         <div class="servico-content">
-                            <h3>Saúde e Bem-Estar</h3>
-                            <p>Programas completos que visam melhorar sua qualidade de vida, energia e saúde de forma
-                                integral.</p>
+                            <h3>Acompanhamento Contínuo</h3>
+                            <p>Suporte constante para garantir sua evolução e motivação.</p>
+                        </div>
+                    </div>
+                    <div class="servico" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/NossosPilares3.jpg" alt="Nutrição Comportamental" class="servico-imagem">
+                        <div class="servico-content">
+                            <h3>Nutrição Comportamental</h3>
+                            <p>Técnicas para uma relação saudável e livre de culpa com a comida.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="como-funciona">
+            <div class="container">
+                <h2 class="section-title">Nossa <span class="golden-text-effect">Jornada</span> Juntos</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>1. Consulta Inicial Detalhada</h3>
+                            <p>Uma conversa aprofundada para eu conhecer sua história, rotina, objetivos e desafios. Aqui, traçamos o mapa do seu sucesso.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <h3>2. Plano Alimentar Personalizado</h3>
+                            <p>Você receberá um plano 100% individualizado, criado para a sua realidade, preferências e necessidades. Sem dietas restritivas, com comida de verdade.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <h3>3. Acompanhamento Contínuo</h3>
+                            <p>Estaremos em contato constante via WhatsApp para tirar dúvidas, ajustar o plano e celebrar cada conquista. Você nunca estará sozinho(a)!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <h3>4. Reavaliação e Evolução</h3>
+                            <p>Nas consultas de retorno, analisamos seus resultados, sua evolução e definimos os próximos passos para garantir que você atinja seu objetivo final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="abordagem">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Minha <span class="golden-text-effect">Abordagem</span></h2>
+                <h2 class="section-title">Nossa <span class="golden-text-effect">Abordagem</span></h2>
                 <div class="abordagem-grid">
+                    <div class="abordagem-item" data-aos="fade-up">
+                        <i class="fas fa-brain"></i>
+                        <h3>Ciência</h3>
+                        <p>Decisões baseadas em evidências científicas atuais.</p>
+                    </div>
                     <div class="abordagem-item" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-clipboard-check"></i>
-                        <h3>Análise Completa</h3>
-                        <p>Iniciamos com uma avaliação detalhada do seu histórico, exames e estilo de vida para entender a fundo suas necessidades.</p>
+                        <i class="fas fa-heart"></i>
+                        <h3>Empatia</h3>
+                        <p>Acolhimento e escuta ativa para entender suas dores.</p>
                     </div>
                     <div class="abordagem-item" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-clipboard-list"></i>
-                        <h3>Plano Personalizado</h3>
-                        <p>Você recebe um plano alimentar exclusivo e flexível, sem terrorismo nutricional, focado em comida de verdade.</p>
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Individualidade</h3>
+                        <p>Respeito total às suas preferências e rotina.</p>
                     </div>
                     <div class="abordagem-item" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fas fa-hand-holding-heart"></i>
-                        <h3>Acompanhamento Contínuo</h3>
-                        <p>Estou ao seu lado durante toda a jornada, com suporte constante via WhatsApp para tirar dúvidas e ajustar o plano.</p>
-                    </div>
-                    <div class="abordagem-item" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fas fa-brain"></i>
-                        <h3>Educação Nutricional</h3>
-                        <p>Meu objetivo é te dar autonomia para que você faça escolhas conscientes e sustentáveis para o resto da vida.</p>
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustentabilidade</h3>
+                        <p>Foco em resultados que você consegue manter para a vida.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <section id="faq">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Perguntas <span class="golden-text-effect">Frequentes</span></h2>
-                <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="section-title">Perguntas <span class="golden-text-effect">Frequentes</span></h2>
+                <div class="faq-container" data-aos="fade-up">
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>Como funciona a primeira consulta?</span>
+                            <span>Como funciona a consulta online?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Na primeira consulta, faremos uma anamnese completa para conhecer sua história, rotina, objetivos e saúde. A partir daí, traçaremos juntos as primeiras metas e estratégias para o seu plano alimentar personalizado.</p>
+                            <p>A consulta é realizada por videochamada, com a mesma qualidade e atenção da presencial. Você pode estar no conforto da sua casa ou em qualquer lugar do mundo. Após a consulta, você recebe seu plano alimentar e materiais de apoio pelo app ou e-mail.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>Você atende online?</span>
+                            <span>Preciso cortar tudo o que gosto?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Sim! Realizo atendimentos online para todo o Brasil e exterior, oferecendo a mesma qualidade e atenção do atendimento presencial, com a comodidade de ser no seu lar.</p>
-                        </div>
-                    </div>
-                     <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Preciso cortar tudo o que eu gosto?</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p>De forma alguma! Acredito em uma nutrição sem terrorismo e com equilíbrio. Meu objetivo é criar um plano sustentável que se encaixe na sua vida, permitindo que você coma o que gosta de forma consciente e estratégica.</p>
+                            <p>De forma alguma! Meu método se baseia no equilíbrio. Vamos juntos encontrar formas de incluir os alimentos que você ama de forma inteligente no seu plano, sem prejudicar seus resultados. O objetivo é ter prazer em comer, não culpa.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>Quais são as formas de pagamento?</span>
+                            <span>Em quanto tempo vejo resultados?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Aceito pagamentos via Pix, transferência bancária e cartão de crédito. Você pode escolher a opção que for mais conveniente.</p>
+                            <p>Os primeiros resultados, como mais disposição e melhora na digestão, podem ser sentidos já na primeira semana. Resultados estéticos variam para cada pessoa, mas o foco é na construção de um progresso constante e sustentável, que você levará para a vida toda.</p>
                         </div>
                     </div>
                 </div>
@@ -170,65 +216,79 @@
 
         <section id="depoimentos">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Resultados que <span
-                        class="golden-text-effect">Inspiram</span></h2>
+                <h2 class="section-title">O que meus pacientes <span class="golden-text-effect">dizem</span></h2>
                 <div class="depoimentos-grid">
+                    <div class="depoimento" data-aos="fade-up">
+                        <img src="images/cliente1.jpg" alt="Foto Paciente 1" class="depoimento-foto">
+                        <p>"A Mariana mudou minha vida! Achei que nunca conseguiria emagrecer comendo bem, mas ela me provou o contrário. Perdi 10kg sem sofrimento!"</p>
+                        <span>- Talita Clerc</span>
+                    </div>
                     <div class="depoimento" data-aos="fade-up" data-aos-delay="100">
-                        <img src="images/cliente1.jpg" alt="Foto de Talita Clerc" class="depoimento-foto">
-                        <p>"A Mariana mudou a minha vida! Perdi 10kg e me sinto incrível, com uma energia que não tinha
-                            antes."</p>
-                        <span class="golden-text-effect">- Talita Clerc</span>
+                        <img src="images/cliente2.jpg" alt="Foto Paciente 2" class="depoimento-foto">
+                        <p>"Meu desempenho na corrida melhorou absurdamente depois que comecei o acompanhamento. Mais energia e recuperação muito mais rápida."</p>
+                        <span>- Gabriel Geraldo.</span>
                     </div>
                     <div class="depoimento" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/cliente2.jpg" alt="Foto de Gabriel Geraldo" class="depoimento-foto">
-                        <p>"A consultoria dela é simplesmente incrível. Didática, atenciosa e extremamente profissional.
-                            Recomendo!"</p>
-                        <span class="golden-text-effect">- Gabriel Geraldo</span>
-                    </div>
-                    <div class="depoimento" data-aos="fade-up" data-aos-delay="300">
-                        <img src="images/cliente3.jpg" alt="Foto de William Fagundes" class="depoimento-foto">
-                        <p>"Melhor nutricionista que já conheci. O profissionalismo e a dedicação são totais. Resultados
-                            visíveis!"</p>
-                        <span class="golden-text-effect">- William Fagundes</span>
+                        <img src="images/cliente3.jpg" alt="Foto Paciente 3" class="depoimento-foto">
+                        <p>"Finalmente fiz as pazes com a balança e com o espelho. A abordagem da Mari é humana e me fez entender meu corpo de verdade."</p>
+                        <span>- Fernanda L.</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="instagram-cta">
-            <div class="container" data-aos="zoom-in">
+            <div class="container" data-aos="fade-up">
                 <i class="fab fa-instagram"></i>
-                <h2>Acompanhe o Dia a Dia</h2>
-                <p>Siga @nutrimarimiguez para dicas, receitas e inspirações diárias sobre saúde e bem-estar.</p>
-                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp" target="_blank"
-                    class="btn-instagram">Seguir Agora</a>
+                <h2>Me siga no Instagram!</h2>
+                <p>Receba dicas diárias, receitas e muito mais para sua jornada saudável.</p>
+                <a href="#" class="btn-instagram">@marianamiguez.nutri</a>
             </div>
         </section>
 
         <section id="contato">
-             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Pronta para <span class="golden-text-effect">Transformar</span> sua Vida?</h2>
-                <p data-aos="fade-up" data-aos-delay="100">Sua jornada para uma vida mais saudável e equilibrada começa com um passo. Vamos juntas?</p>
-                <a href="https://wa.me/5521992678505?text=Quero%20agendar%20minha%20consulta" target="_blank" class="btn-hero" data-aos="fade-up" data-aos-delay="200">Agendar Minha Consulta Agora</a>
+            <div class="container">
+                <h2 class="section-title">Pronto(a) para começar a sua <span class="golden-text-effect">transformação?</span></h2>
+                <p>O primeiro passo é o mais importante. Agende sua consulta inicial e vamos juntos construir a sua melhor versão. Estou aqui para te guiar em cada etapa.</p>
+                <a href="#" class="btn-agendar">Agendar Consulta Agora</a>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div class="container golden-text-effect">
-            <p>&copy; 2024 Mariana Miguez. Todos os direitos reservados.</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/nutrimarimiguez?igsh=azhxdm5jcmh2c3Zp" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok" target="_blank"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5521992678505" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <div class="container footer-grid">
+            <div class="footer-col" id="footer-about">
+                <img src="images/logo_header.png" alt="Logo Mariana Miguez" class="footer-logo">
+                <p>Transformando sua relação com a comida e ajudando você a alcançar o equilíbrio definitivo. </p>
+                <p>© 2024 Mariana Miguez. <br> Todos os direitos reservados.</p>
             </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <p>Consultas Online</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>Desenvolvido por: William Fagundes</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="javascript.js"></script>
-</body>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js"></script>
+
+</body>
 </html>
